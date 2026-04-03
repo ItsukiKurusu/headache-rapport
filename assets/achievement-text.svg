@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">累計実績テキスト</title>
+  <desc id="desc">累計10,006人の施術実績。もう薬に頼らない生活へ。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff7e8"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="300" fill="url(#bg)" rx="20"/>
+  <rect x="24" y="24" width="1152" height="252" fill="none" stroke="#e8d7a5" stroke-width="4" rx="16"/>
+  <text x="600" y="128" text-anchor="middle" font-family="'Noto Sans JP', 'Yu Gothic', sans-serif" font-weight="900" font-size="64" fill="#8b1a1b">累計10,006人の施術実績</text>
+  <text x="600" y="204" text-anchor="middle" font-family="'Noto Sans JP', 'Yu Gothic', sans-serif" font-weight="700" font-size="42" fill="#de6f53">もう薬に頼らない生活へ。</text>
+</svg>

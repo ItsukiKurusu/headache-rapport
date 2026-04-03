@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">予約CTAボタン</title>
+  <desc id="desc">今すぐ予約するボタン画像</desc>
+  <defs>
+    <linearGradient id="btn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#872520"/>
+      <stop offset="1" stop-color="#480c0a"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="0.5" stop-color="rgba(255,255,255,0.28)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" fill="#f7f7f7"/>
+  <rect x="110" y="62" width="980" height="196" rx="98" fill="url(#btn)"/>
+  <rect x="110" y="62" width="980" height="196" rx="98" fill="url(#shine)"/>
+  <text x="600" y="182" text-anchor="middle" font-family="'Noto Sans JP', 'Yu Gothic', sans-serif" font-weight="900" font-size="74" fill="#ffffff">今すぐ予約する</text>
+  <circle cx="1000" cy="160" r="36" fill="rgba(255,255,255,0.2)"/>
+  <path d="M990 142 L1014 160 L990 178" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
