@@ -68,6 +68,13 @@
         @keyframes shine {
             100% { left: 125%; }
         }
+        .banner-hover {
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        .banner-hover:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
         html {
             scroll-behavior: smooth;
         }
@@ -104,9 +111,8 @@
 
         <div class="bg-white mx-5 md:mx-8 lg:mx-10 mb-8 p-6 md:p-7 lg:p-8 rounded-md shadow-sm border border-gray-100 relative">
             <div class="text-center mb-6">
-                <span class="font-bold text-lg lg:text-xl xl:text-2xl inline-block relative">
+                <span class="font-bold text-lg lg:text-xl xl:text-2xl inline-block relative border-b-4 border-brand-orange pb-2">
                     頭痛について、こんなお悩みございませんか？
-                    <span class="absolute bottom-0 left-0 w-full h-3 bg-orange-200/60 -z-10 rounded-sm"></span>
                 </span>
             </div>
 
@@ -149,9 +155,8 @@
             </div>
 
             <div class="text-center mt-6">
-                <span class="inline-block px-2 font-bold text-lg lg:text-2xl xl:text-3xl relative mb-2">
-                    <span class="relative z-10">もう大丈夫です！</span>
-                    <span class="absolute bottom-1 left-0 w-full h-3 bg-orange-200/60 -z-10 rounded-sm"></span>
+                <span class="inline-block px-2 font-bold text-lg lg:text-2xl xl:text-3xl relative mb-2 border-b-4 border-brand-orange pb-2">
+                    もう大丈夫です！
                 </span>
                 <p class="font-bold lg:text-lg xl:text-xl">1つでも当てはまるなら私が必ずあなたのお役に立てます！</p>
             </div>
@@ -169,7 +174,15 @@
         </div>
 
         <div class="bg-white p-4 md:p-6 lg:p-8 flex justify-center items-center border-b border-gray-200">
-            <img src="assets/line-banner.png" alt="初回限定キャンペーン" class="w-full max-w-[95%] sm:max-w-[480px] md:max-w-[640px] lg:max-w-[880px] object-contain drop-shadow-sm">
+            <a href="https://line.me/R/ti/p/@534aunyt" target="_blank" rel="noopener noreferrer" class="w-full flex justify-center">
+                <img src="assets/line-banner.png" alt="LINE予約" class="banner-hover w-full max-w-[95%] sm:max-w-[480px] md:max-w-[640px] lg:max-w-[880px] object-contain drop-shadow-sm">
+            </a>
+        </div>
+
+        <div class="bg-white p-4 md:p-6 lg:p-8 flex justify-center items-center border-b border-gray-200">
+            <a href="https://beauty.hotpepper.jp/kr/slnH000739757/" target="_blank" rel="noopener noreferrer" class="w-full flex justify-center">
+                <img src="assets/hotpepper-banner.png" alt="ホットペッパー予約" class="banner-hover w-full max-w-[95%] sm:max-w-[480px] md:max-w-[640px] lg:max-w-[880px] object-contain drop-shadow-sm">
+            </a>
         </div>
 
         <div id="voice" class="bg-white py-12 px-4 border-b border-gray-100">
@@ -210,7 +223,9 @@
 
         <div class="py-8 bg-gray-50 text-center px-4">
             <p class="text-sm lg:text-base xl:text-lg font-bold text-brand-text mb-2">＼ 辛い頭痛から解放されたい方はこちら ／</p>
-            <img src="assets/cta-button-placeholder.svg" alt="ご予約はこちら" class="w-full max-w-[380px] md:max-w-[460px] lg:max-w-[560px] xl:max-w-[680px] mx-auto hover:scale-105 transition-transform duration-300 cursor-pointer drop-shadow-md rounded-xl bg-gray-200">
+            <a href="https://line.me/R/ti/p/@534aunyt" target="_blank" rel="noopener noreferrer" class="w-full flex justify-center">
+                <img src="assets/line-banner.png" alt="LINE予約" class="banner-hover w-full max-w-[380px] md:max-w-[460px] lg:max-w-[560px] xl:max-w-[680px] drop-shadow-md rounded-xl bg-gray-200">
+            </a>
         </div>
 
         <div class="py-12 px-4 bg-white border-y border-gray-100">
@@ -260,7 +275,9 @@
         </div>
 
         <div class="py-8 bg-gray-50 text-center px-4">
-            <img src="assets/cta-button-placeholder.svg" alt="ご予約はこちら" class="w-full max-w-[380px] md:max-w-[460px] lg:max-w-[560px] mx-auto hover:scale-105 transition-transform duration-300 cursor-pointer drop-shadow-md rounded-xl bg-gray-200">
+            <a href="https://line.me/R/ti/p/@534aunyt" target="_blank" rel="noopener noreferrer" class="w-full flex justify-center">
+                <img src="assets/line-banner.png" alt="LINE予約" class="banner-hover w-full max-w-[380px] md:max-w-[460px] lg:max-w-[560px] drop-shadow-md rounded-xl bg-gray-200">
+            </a>
         </div>
 
         <div class="py-12 px-4 bg-white">
@@ -578,7 +595,9 @@
 
             <div class="bg-white/10 p-6 rounded-xl border border-white/20">
                 <p class="font-bold text-brand-gold mb-3 text-lg">本気で頭痛を改善したい方は、<br>今すぐご予約ください。</p>
-                <img src="assets/cta-button-placeholder.svg" alt="ご予約はこちら" class="w-full max-w-[380px] md:max-w-[460px] lg:max-w-[560px] mx-auto hover:scale-105 transition-transform duration-300 cursor-pointer drop-shadow-lg bg-gray-200 rounded-xl">
+                <a href="https://line.me/R/ti/p/@534aunyt" target="_blank" rel="noopener noreferrer" class="block">
+                    <img src="assets/line-banner.png" alt="LINE予約" class="banner-hover w-full max-w-[380px] md:max-w-[460px] lg:max-w-[560px] drop-shadow-lg bg-gray-200 rounded-xl">
+                </a>
             </div>
         </div>
 
