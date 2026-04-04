@@ -53,11 +53,13 @@
 
     <!-- 1. メインビジュアル (全画面幅) -->
     <section class="relative w-full h-[500px] sm:h-[600px] bg-[#d9d9d9]">
-        <img src="assets/owner.jpg" alt="院長" class="w-full h-full object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop'">
+        <!-- object-center から object-top に変更し、上部が切れないように調整 -->
+        <img src="assets/owner.jpg" alt="院長" class="w-full h-full object-cover object-top" onerror="this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop'">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
         
         <div class="absolute bottom-12 w-full">
-            <div class="max-w-3xl mx-auto px-6 text-center">
+            <!-- max-w-3xl から max-w-4xl に広げました -->
+            <div class="max-w-4xl mx-auto px-6 text-center">
                 <h1 class="text-white font-bold tracking-wide">
                     <span class="block text-5xl sm:text-6xl mb-3 leading-none drop-shadow-md">片頭痛、卒業。</span>
                     <span class="block text-2xl sm:text-3xl leading-snug drop-shadow-md">
@@ -70,14 +72,16 @@
 
     <!-- 2. 実績バナー -->
     <section class="w-full bg-brand-bg py-8 border-b border-gray-200">
-        <div class="max-w-3xl mx-auto px-6 flex justify-center items-center">
-            <img src="assets/banner.png" alt="累計10,006人の施術実績。もう薬に頼らない生活へ。" class="w-full max-w-[500px] object-contain drop-shadow-sm" onerror="this.src='段落テキスト.png'">
+        <!-- max-w-3xl から max-w-4xl に広げました -->
+        <div class="max-w-4xl mx-auto px-6 flex justify-center items-center">
+            <!-- バナーの最大幅も 500px -> 600px に少し拡大 -->
+            <img src="assets/banner.png" alt="累計10,006人の施術実績。もう薬に頼らない生活へ。" class="w-full max-w-[600px] object-contain drop-shadow-sm" onerror="this.src='段落テキスト.png'">
         </div>
     </section>
 
     <!-- 3. 導入 -->
     <section class="w-full bg-white py-12">
-        <div class="max-w-3xl mx-auto px-6 sm:px-10 text-center">
+        <div class="max-w-4xl mx-auto px-6 sm:px-10 text-center">
             <p class="font-bold text-lg sm:text-xl leading-loose">
                 当院は、松山で【唯一】の<br class="sm:hidden">頭痛めまい専門整体院です。<br>
                 <span class="text-brand-red">こんな症状で悩んでいませんか？</span>
@@ -87,11 +91,10 @@
 
     <!-- 4. お悩みチェックリスト -->
     <section class="w-full bg-brand-bg py-16 relative overflow-hidden">
-        <!-- 2枚目の画像のような背景の装飾（淡い円） -->
         <div class="absolute top-0 left-[-10%] w-64 h-64 bg-[#f2e2c2] rounded-full opacity-50 blur-3xl"></div>
         <div class="absolute bottom-0 right-[-10%] w-80 h-80 bg-[#f2e2c2] rounded-full opacity-50 blur-3xl"></div>
         
-        <div class="max-w-3xl mx-auto px-6 sm:px-10 relative z-10">
+        <div class="max-w-4xl mx-auto px-6 sm:px-10 relative z-10">
             <div class="bg-white p-6 sm:p-8 rounded-xl shadow-md border border-[#f0e6d2]">
                 <div class="text-center mb-8">
                     <span class="font-bold text-xl sm:text-2xl inline-block relative border-b-4 border-brand-orange pb-2">
@@ -151,15 +154,17 @@
             <div class="bg-brand-orange text-white text-center py-4 mb-8 shadow-inner w-full">
                 <h2 class="font-bold text-base sm:text-lg tracking-wide">当院の技術が認められ、凄腕施術家として掲載されました！</h2>
             </div>
-            <div class="max-w-3xl mx-auto px-6 sm:px-10 flex justify-center">
-                <img src="assets/sugoude.png" alt="凄腕施術家" class="w-full max-w-[600px] object-contain drop-shadow" onerror="this.src='https://placehold.co/800x400/eeeeee/aaaaaa?text=Sugoude+Image'">
+            <div class="max-w-4xl mx-auto px-6 sm:px-10 flex justify-center">
+                <!-- 画像の最大幅を 600px -> 800px に拡大 -->
+                <img src="assets/sugoude.png" alt="凄腕施術家" class="w-full max-w-[800px] object-contain drop-shadow" onerror="this.src='https://placehold.co/800x400/eeeeee/aaaaaa?text=Sugoude+Image'">
             </div>
         </section>
 
         <!-- 6. CTA (予約ボタン群) -->
         <section class="w-full bg-gray-50 py-12 border-y border-gray-200">
-            <div class="max-w-3xl mx-auto px-6 sm:px-10">
-                <div class="max-w-[500px] mx-auto space-y-4">
+            <div class="max-w-4xl mx-auto px-6 sm:px-10">
+                <!-- ボタンの最大幅を 500px -> 600px に拡大 -->
+                <div class="max-w-[600px] mx-auto space-y-4">
                     <a href="https://line.me/R/ti/p/@534aunyt" target="_blank" rel="noopener noreferrer" class="block">
                         <img src="assets/line-banner.png" alt="LINE予約" class="banner-hover w-full rounded-xl shadow-md" onerror="this.src='https://placehold.co/600x160/06C755/ffffff?text=LINE+RESERVE'">
                     </a>
@@ -172,39 +177,97 @@
 
         <!-- 7. お客様の声 -->
         <section id="voice" class="w-full py-16 bg-white relative overflow-hidden">
-            <div class="max-w-3xl mx-auto px-6 sm:px-10 relative z-10">
+            <div class="max-w-4xl mx-auto px-6 sm:px-10 relative z-10">
                 <div class="text-center mb-10">
                     <span class="text-brand-orange font-bold text-sm tracking-widest block mb-2">VOICE</span>
                     <h2 class="text-2xl sm:text-3xl font-bold text-brand-text mb-4">喜びの声が続々と届いています！</h2>
                     <div class="w-16 h-1 bg-brand-orange mx-auto"></div>
                 </div>
 
-                <div class="space-y-6 max-w-[600px] mx-auto">
-                    <div class="bg-brand-bg rounded-xl p-6 sm:p-8 shadow-sm border border-[#f0e6d2]">
-                        <h3 class="font-bold text-[#b58f4a] text-lg sm:text-xl mb-4 leading-snug border-b border-[#e8d7a5] pb-3">「仕事が手につかないほどの頭痛がなくなりました！」</h3>
-                        <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
-                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop" alt="お客様" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-full border-4 border-white shadow-md mx-auto sm:mx-0">
-                            <div>
-                                <p class="font-bold mb-2 text-sm text-gray-500 text-center sm:text-left">30代 女性 デスクワーク</p>
-                                <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
-                                    10代の頃から偏頭痛に悩み、薬を飲んでも頻度は減りませんでした。こちらで「首筋のコリが原因」と教えていただき施術を受けたところ、翌日から頻度が激減し、薬を手放すことができました！
-                                </p>
+                <div class="space-y-10 max-w-4xl mx-auto">
+                    
+                    <!-- 1人目 -->
+                    <div class="bg-brand-bg rounded-xl p-6 sm:p-8 md:p-10 shadow-sm border border-[#f0e6d2]">
+                        <h3 class="font-bold text-[#b58f4a] text-xl md:text-2xl mb-6 leading-snug border-b border-[#e8d7a5] pb-4">南海放送　清家夕貴アナから喜びの声をいただきました！</h3>
+                        
+                        <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+                            <!-- 大きく表示する写真プレースホルダ -->
+                            <img src="https://placehold.co/600x600/eeeeee/aaaaaa?text=Photo" alt="お客様写真プレースホルダ" class="w-full md:w-1/3 aspect-square object-cover rounded-xl border-4 border-white shadow-md mx-auto md:mx-0 flex-shrink-0">
+                            
+                            <!-- Q&A全文 -->
+                            <div class="w-full md:w-2/3 space-y-5 text-sm sm:text-base text-gray-800">
+                                <div>
+                                    <p class="font-bold text-brand-orange mb-1">Q,当院に来られる前はいつ頃から、どのようなことでお困りでしたか？</p>
+                                    <p class="leading-relaxed">来院は半年前から（2021年１月末〜）<br>肩こりからの偏頭痛が度々</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-brand-orange mb-1">Q,その痛みが解決する前は、ご自身でどのようなことをされてきましたか？</p>
+                                    <p class="leading-relaxed">痛みがはげしくなる前に鎮痛剤を服用したり、肩こりを治すため整体に行くなどしていた</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-brand-orange mb-1">Q,その結果、どのような効果がありましたか？</p>
+                                    <p class="leading-relaxed">一時的に痛みが緩和されるものの、根本的な治療にはならず・・・</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-brand-orange mb-1">Q,当院のカウンセリング、施術はいかがでしたか？</p>
+                                    <p class="leading-relaxed">グリグリ体をほぐすのではなく、体の構造やその人のクセをしっかり捉えた施術だと感じた。</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-brand-orange mb-1">Q,施術後、症状はどのように変化しましたか？</p>
+                                    <p class="leading-relaxed">これまで一時的な緩和だと思っていた施術と異なり、体や頭がしっかりとほぐれているのを感じ、体の軽さが持続！</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-brand-orange mb-1">Q,症状が改善されてよかったこと、嬉しかったことはどのようなことですか？</p>
+                                    <p class="leading-relaxed">なによりも頭痛の回数が減ったこと！それに伴う鎮痛剤の使用が減ったこと！痛みで寝込んでしまう日が減ったこと！</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-brand-orange mb-1">Q,同じ症状でお悩みの方へメッセージをお願いします。</p>
+                                    <p class="leading-relaxed">らぽーるさんに来るまで、肩こりや頭痛は治らない、しょうがないと、ほぼ諦めていましたがこんなにも軽減されるんだということを同じ悩みをもつ方にも実感してほしいです。</p>
+                                </div>
+                                <p class="text-xs sm:text-sm text-gray-500 mt-4">※個人の感想であり、施術効果には個人差があります</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="bg-brand-bg rounded-xl p-6 sm:p-8 shadow-sm border border-[#f0e6d2]">
-                        <h3 class="font-bold text-[#b58f4a] text-lg sm:text-xl mb-4 leading-snug border-b border-[#e8d7a5] pb-3">「10年ぶりの社会復帰にも成功しました！」</h3>
-                        <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop" alt="お客様" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-full border-4 border-white shadow-md mx-auto sm:mx-0">
-                            <div>
-                                <p class="font-bold mb-2 text-sm text-gray-500 text-center sm:text-left">40代 女性 主婦</p>
-                                <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
-                                    病院に通い毎日予防薬を飲んでいましたが、不安ばかりでした。先生の施術は痛みがなく、頭痛の頻度が激減！明日の体調を心配せず過ごせるようになり、1日も休まず仕事に行けています。
-                                </p>
+                    <!-- 2人目 -->
+                    <div class="bg-brand-bg rounded-xl p-6 sm:p-8 md:p-10 shadow-sm border border-[#f0e6d2]">
+                        <h3 class="font-bold text-[#b58f4a] text-xl md:text-2xl mb-6 leading-snug border-b border-[#e8d7a5] pb-4">仕事が手につかないほどの頭痛がなくなりました！</h3>
+                        
+                        <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+                            <!-- 大きく表示する写真プレースホルダ -->
+                            <img src="https://placehold.co/600x600/eeeeee/aaaaaa?text=Photo" alt="お客様写真プレースホルダ" class="w-full md:w-1/3 aspect-square object-cover rounded-xl border-4 border-white shadow-md mx-auto md:mx-0 flex-shrink-0">
+                            
+                            <!-- Q&A全文 -->
+                            <div class="w-full md:w-2/3 space-y-5 text-sm sm:text-base text-gray-800">
+                                <div>
+                                    <p class="font-bold text-brand-orange mb-1">Q,当院に来られる前はいつ頃から、どのようなことでお困りでしたか？</p>
+                                    <p class="leading-relaxed">10代の頃から偏頭痛に悩まされていました。30代で転職をして、デスクワーク中心になったこともあり、頭痛の頻度が増し、時には仕事が手につかないほどでした。</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-brand-orange mb-1">Q,その痛みが解決する前は、ご自身でどのようなことをされてきましたか？</p>
+                                    <p class="leading-relaxed">市販の頭痛薬を服用したり、内科・脳外科（MRI）を受診しました。</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-brand-orange mb-1">Q,その結果、どのような効果がありましたか？</p>
+                                    <p class="leading-relaxed">薬を服用した後は頭痛が軽減されるような気はしたが、頭痛の頻度は減らず、薬を服用する回数が増えたような気がします。</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-brand-orange mb-1">Q,当院のカウンセリング、施術はいかがでしたか？</p>
+                                    <p class="leading-relaxed">初回の時、最初に体全体をみていただき、頭痛の原因がどこにあるのか丁寧に教えていただいた。私の場合は首筋のコリがひどいと言われたが、言われるまではあまり首筋など意識したことはなく、まさか頭痛の原因になっているとは思いもしませんでした。</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-brand-orange mb-1">Q,施術後、症状はどのように変化しましたか？</p>
+                                    <p class="leading-relaxed">翌日から頭痛の頻度が極端に減少し、薬を服用することはなくなりました。軽い頭痛はたまにはありますが、薬を飲むほどではないので、教えていただいたストレッチ等をして、予防に努めています。</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-brand-orange mb-1">Q,同じ症状でお悩みの方へメッセージをお願いします。</p>
+                                    <p class="leading-relaxed">ぜひ一度受けてみることをおススメします。人生が変わるかもしれません！</p>
+                                </div>
+                                <p class="text-xs sm:text-sm text-gray-500 mt-4">※個人の感想であり、施術効果には個人差があります</p>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -214,20 +277,39 @@
              <!-- 背景の装飾 -->
             <div class="absolute top-[20%] right-[-10%] w-72 h-72 bg-white rounded-full opacity-60 blur-2xl"></div>
 
-            <div class="max-w-3xl mx-auto px-6 sm:px-10 relative z-10">
+            <div class="max-w-4xl mx-auto px-6 sm:px-10 relative z-10">
                 <div class="text-center mb-10">
                     <span class="text-brand-orange font-bold text-sm tracking-widest block mb-2">GREETING</span>
                     <h2 class="text-2xl sm:text-3xl font-bold text-brand-text mb-4">院長あいさつ</h2>
                     <div class="w-16 h-1 bg-brand-orange mx-auto"></div>
                 </div>
                 
-                <div class="max-w-[600px] mx-auto">
-                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop" alt="院長" class="w-full h-64 object-cover rounded-xl shadow-md mb-8">
-                    <h3 class="font-bold text-xl sm:text-2xl mb-6 leading-tight text-center sm:text-left">「同じように苦しむ人の<br class="hidden sm:block">力になりたい」</h3>
-                    <div class="space-y-4 text-base leading-loose text-gray-800">
-                        <p>私は高校1年生の頃、突然のめまいと頭痛に襲われ、病院で「メニエール病」と診断されました。大好きな野球を辞めようかと悩むほど辛い時期でした。</p>
-                        <p>自分自身がつらい症状を経験したからこそ、あなたの頭痛・めまいにも本気で向き合うことができます。</p>
-                        <p>頭痛やめまいは、<strong class="text-brand-red bg-yellow-100 px-1">決して“治らないもの”ではありません。</strong>ひとりで抱え込まず、まずはご相談ください。</p>
+                <div class="max-w-3xl mx-auto">
+                    <img src="assets/owner.jpg" alt="院長" class="w-full h-64 sm:h-80 object-cover object-top rounded-xl shadow-md mb-4" onerror="this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop'">
+                    <p class="text-right font-bold text-lg mb-8 text-brand-text">院長　川又 淳矢</p>
+                    
+                    <div class="space-y-6 text-base sm:text-lg leading-loose text-gray-800">
+                        <p>当院のホームページをご覧いただき、ありがとうございます。</p>
+                        
+                        <p>私は高校1年生の頃、突然のめまいと頭痛に襲われ、<br>
+                        病院でメニエール病と診断されました。<br>
+                        大好きだった野球部を辞めようかと悩むほど、つらい時期でした。</p>
+                        
+                        <p>その経験から、<br>
+                        <span class="font-bold text-xl text-brand-text leading-tight block my-2">「同じように苦しむ人の力になりたい」</span>
+                        という強い想いを持ち、13年間技術を磨き続け、<br>
+                        令和元年11月1日に <span class="font-bold border-b-2 border-brand-orange pb-0.5">頭痛専門らぽーる整体院</span> を開院しました。</p>
+                        
+                        <p>自分自身がつらい症状を経験したからこそ、<br>
+                        あなたの頭痛・めまいにも本気で向き合うことができます。</p>
+                        
+                        <p>頭痛やめまいは、<br>
+                        <strong class="text-brand-red bg-yellow-100 px-1">決して“治らないもの”ではありません。</strong><br>
+                        ひとりで抱え込まず、<br>
+                        まずは <strong class="text-brand-orange">ご相談だけでも大丈夫</strong> です。</p>
+                        
+                        <p>あなたの症状に寄り添い、<br>
+                        <strong class="border-b-2 border-brand-orange pb-0.5">最適な改善への道筋</strong> をご提案させていただきます。</p>
                     </div>
                 </div>
             </div>
@@ -235,96 +317,232 @@
 
         <!-- 9. 選ばれる理由 -->
         <section class="w-full py-16 bg-white relative overflow-hidden">
-            <div class="max-w-3xl mx-auto px-6 sm:px-10 relative z-10">
+            <div class="max-w-4xl mx-auto px-6 sm:px-10 relative z-10">
                 <div class="text-center mb-12">
                     <span class="text-brand-orange font-bold text-sm tracking-widest block mb-2">REASON</span>
                     <h2 class="text-2xl sm:text-3xl font-bold text-brand-text mb-4">当院が選ばれる3つの理由</h2>
                     <div class="w-16 h-1 bg-brand-orange mx-auto"></div>
                 </div>
 
-                <div class="max-w-[600px] mx-auto space-y-8">
+                <div class="max-w-3xl mx-auto space-y-8">
                     <div class="bg-white p-6 sm:p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 relative">
                         <div class="absolute -top-5 -left-3 sm:-left-5 bg-gradient-to-br from-brand-gold to-[#a68a4a] text-white font-black text-2xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg">1</div>
-                        <h3 class="font-bold text-lg sm:text-xl mb-3 pl-6 border-b border-gray-100 pb-3">「首のゆがみ」と「血流」を根本から整える</h3>
-                        <p class="text-sm sm:text-base leading-relaxed text-gray-700">
-                            慢性頭痛には必ず原因があります。レントゲンでは分からない「首のゆがみ（骨のズレ）」を見つけ出し、整えることで薬に頼らない体を作ります。
+                        <h3 class="font-bold text-lg sm:text-xl mb-3 pl-6 border-b border-gray-100 pb-3">慢性頭痛の原因を特定し、根本から改善する施術だから</h3>
+                        <p class="text-sm sm:text-base leading-loose text-gray-700">
+                            慢性頭痛には必ず原因があります。<br>
+                            しかし、原因を特定しないまま薬だけに頼っていても改善は進みません。<br><br>
+                            当院では、まず丁寧なカウンセリングと検査を行い、<br>
+                            <strong class="font-bold text-brand-text">日常生活や姿勢のクセの中に隠れた“本当の原因”を見つけ出します。</strong><br><br>
+                            多くの慢性頭痛は、<br>
+                            <strong class="font-bold text-brand-text">首のゆがみ（骨のズレ）と血流低下</strong>が関係しています。<br>
+                            これはレントゲンやMRIだけでは分からないことも多く、<br>
+                            実際の生活動作や体の使い方を見て初めて把握できる部分です。<br><br>
+                            だからこそ、初回のカウンセリングを重視しています。<br>
+                            あなたの頭痛の原因をわかりやすく説明し、<br>
+                            改善までの道筋を一緒に作っていきます。
                         </p>
                     </div>
 
                     <div class="bg-white p-6 sm:p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 relative">
                         <div class="absolute -top-5 -left-3 sm:-left-5 bg-gradient-to-br from-brand-gold to-[#a68a4a] text-white font-black text-2xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg">2</div>
-                        <h3 class="font-bold text-lg sm:text-xl mb-3 pl-6 border-b border-gray-100 pb-3">首だけでなく「内臓」までアプローチする</h3>
-                        <p class="text-sm sm:text-base leading-relaxed text-gray-700">
-                            ストレスや疲労による「内臓機能の低下」が頭痛を引き起こすケースが多くあります。首・姿勢・内臓の3つを整えることで、92%の改善率を実現しています。
+                        <h3 class="font-bold text-lg sm:text-xl mb-3 pl-6 border-b border-gray-100 pb-3">日常生活指導が徹底しているから</h3>
+                        <p class="text-sm sm:text-base leading-loose text-gray-700">
+                            毎日多くの頭痛患者さんを施術する中で気づいたことがあります。<br>
+                            それは、<strong class="font-bold text-brand-text">普段の姿勢・動作・生活習慣のクセが頭痛を引き起こしていることが非常に多い</strong>ということです。<br><br>
+                            当院では、初回カウンセリングで伺った情報をもとに、<br>
+                            あなたの日常生活の中にある <strong class="font-bold text-brand-text">“頭痛の原因になりやすいクセ”</strong> を分かりやすくお伝えします。<br><br>
+                            施術だけで根本改善をめざすことは難しいため、<br>
+                            アフターフォローにも力を入れています。<br>
+                            <span class="pl-2 block">・痛みが出たときの対処法</span>
+                            <span class="pl-2 block">・自宅でできるケア方法</span>
+                            <span class="pl-2 block mb-2">・姿勢や動きの改善ポイント</span>
+                            これらを随時お伝えし、<br>
+                            <strong class="font-bold text-brand-text border-b-2 border-brand-orange pb-0.5">「あなた × 当院」の二人三脚で頭痛を根本から改善</strong>していきます。
                         </p>
                     </div>
 
                     <div class="bg-white p-6 sm:p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 relative">
                         <div class="absolute -top-5 -left-3 sm:-left-5 bg-gradient-to-br from-brand-gold to-[#a68a4a] text-white font-black text-2xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg">3</div>
-                        <h3 class="font-bold text-lg sm:text-xl mb-3 pl-6 border-b border-gray-100 pb-3">再発を防ぐ「日常生活指導」を徹底している</h3>
-                        <p class="text-sm sm:text-base leading-relaxed text-gray-700">
-                            普段の姿勢や動作のクセが頭痛の引き金です。施術だけでなく、自宅でできるケア方法を二人三脚でお伝えし、一生ものの健康をサポートします。
+                        <h3 class="font-bold text-lg sm:text-xl mb-3 pl-6 border-b border-gray-100 pb-3">頭痛改善率92％。首と内臓まで整える独自の頭痛整体だから</h3>
+                        <p class="text-sm sm:text-base leading-loose text-gray-700">
+                            頭痛の多くは、<br>
+                            <strong class="font-bold text-brand-text">首への過剰な負担と血行不良</strong>が原因です。<br><br>
+                            人の頭は5〜6kgあり、<br>
+                            15度うつむくだけで負担は約3倍、<br>
+                            スマホ姿勢の60度では約5倍にまで増えます。<br>
+                            これに加えてストレスが続くと、<br>
+                            首まわりの筋肉が強く緊張し、血流がさらに低下。<br>
+                            これが慢性頭痛の大きな引き金になります。<br><br>
+                            当院では、首だけでなく<br>
+                            <strong class="font-bold text-brand-text">内臓（特に腹部）の働きにも着目</strong>して施術を行います。<br>
+                            内臓機能の低下が頭痛やめまいにつながるケースも多いためです。<br><br>
+                            首・姿勢・内臓の3つを整えることで、<br>
+                            再発しにくい身体へ導き、<br>
+                            <strong class="font-bold text-brand-red text-lg">92％の頭痛改善率</strong>を実現しています。
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 sm:p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 relative">
+                        <div class="absolute -top-5 -left-3 sm:-left-5 bg-gradient-to-br from-brand-gold to-[#a68a4a] text-white font-black text-2xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg">4</div>
+                        <h3 class="font-bold text-lg sm:text-xl mb-3 pl-6 border-b border-gray-100 pb-3">完全予約制、あなただけの時間を大切にします</h3>
+                        <p class="text-sm sm:text-base leading-loose text-gray-700">
+                            当院は <strong class="font-bold text-brand-text">1日8名限定の完全予約制</strong>。<br>
+                            ご予約いただいたその時間は、あなただけのための時間です。<br><br>
+                            施術はすべてマンツーマンで行うため、<br>
+                            周りを気にせず、悩みや不安を安心してお話しいただけます。<br><br>
+                            「ベッドが並んでいて話しづらい…」<br>
+                            そんな思いをさせないよう、<br>
+                            <strong class="font-bold text-brand-text">静かで落ちついたプライベート空間</strong>をご用意しています。
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 sm:p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 relative">
+                        <div class="absolute -top-5 -left-3 sm:-left-5 bg-gradient-to-br from-brand-gold to-[#a68a4a] text-white font-black text-2xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg">5</div>
+                        <h3 class="font-bold text-lg sm:text-xl mb-3 pl-6 border-b border-gray-100 pb-3">改善という結果を提供します。</h3>
+                        <p class="text-sm sm:text-base leading-loose text-gray-700">
+                            頭痛を最速で改善するには、<br>
+                            <strong class="font-bold text-brand-text">正しい道順（改善プロセス）を知ること</strong>が大切です。<br><br>
+                            ネットの情報や市販薬だけで乗り越えようとすると、<br>
+                            時間も労力もかかり、良くならないまま何年も悩み続けてしまうことがあります。<br><br>
+                            私はこれまで多くの頭痛患者さんを改善へ導いてきました。<br>
+                            その経験から、あなたが迷い込んでいる “頭痛という迷路” の出口まで、<br>
+                            <strong class="font-bold text-brand-text border-b-2 border-brand-orange pb-0.5">最短ルートでナビゲートすることが私の役目</strong>だと考えています。<br><br>
+                            ひとりで抱え込まず、<br>
+                            一緒にゴール（改善）を目指しましょう。
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 10. お約束 -->
-        <section class="w-full py-16 bg-brand-bg border-t border-[#f0e6d2] relative overflow-hidden">
+        <!-- 10. 料金表 -->
+        <section class="w-full py-16 bg-gray-50 border-t border-gray-200 relative overflow-hidden">
+             <!-- 背景装飾 -->
+             <div class="absolute top-[20%] left-[-10%] w-64 h-64 bg-white rounded-full opacity-60 blur-3xl"></div>
+            
+            <div class="max-w-4xl mx-auto px-6 sm:px-10 relative z-10">
+                <div class="text-center mb-10">
+                    <span class="text-brand-orange font-bold text-sm tracking-widest block mb-2">PRICE</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-brand-text mb-4">料金表</h2>
+                    <div class="w-16 h-1 bg-brand-orange mx-auto"></div>
+                </div>
+
+                <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 overflow-hidden">
+                    <div class="bg-gradient-to-r from-brand-orange to-[#e68a73] text-center py-4 sm:py-5">
+                        <h3 class="font-bold text-lg sm:text-xl text-white tracking-widest">基本料金表</h3>
+                    </div>
+                    <div class="p-6 sm:p-10 space-y-8 sm:space-y-0">
+                        <!-- 初回 -->
+                        <div class="flex flex-col sm:flex-row justify-between items-center sm:pb-8 sm:border-b border-dashed border-gray-300 gap-2 sm:gap-6">
+                            <div class="text-center sm:text-left flex-1">
+                                <h4 class="font-bold text-xl sm:text-2xl text-brand-text">頭痛専門整体</h4>
+                            </div>
+                            <div class="text-center sm:text-left flex-1">
+                                <p class="text-sm sm:text-base text-gray-600 font-medium">初回 (1時間少々)</p>
+                            </div>
+                            <div class="flex items-baseline justify-center sm:justify-end flex-1 text-brand-text">
+                                <span class="text-4xl sm:text-5xl font-black tracking-tighter">7,700</span>
+                                <span class="text-xl font-bold ml-1">円</span>
+                            </div>
+                        </div>
+
+                        <!-- スマホ用の区切り線 -->
+                        <div class="border-b border-dashed border-gray-300 block sm:hidden"></div>
+
+                        <!-- 2回目以降 -->
+                        <div class="flex flex-col sm:flex-row justify-between items-center sm:pt-8 gap-2 sm:gap-6">
+                            <div class="text-center sm:text-left flex-1">
+                                <span class="inline-block bg-brand-red text-white text-xs sm:text-sm font-bold px-3 py-1 rounded-full shadow-sm mt-2 sm:mt-0">1日8名限定</span>
+                            </div>
+                            <div class="text-center sm:text-left flex-1">
+                                <p class="text-sm sm:text-base text-gray-600 font-medium">2回目以降 (30〜40分)</p>
+                            </div>
+                            <div class="flex items-baseline justify-center sm:justify-end flex-1 text-brand-text">
+                                <span class="text-4xl sm:text-5xl font-black tracking-tighter">7,700</span>
+                                <span class="text-xl font-bold ml-1">円</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#fcf8f2] py-4 sm:py-5 text-center border-t border-[#f0e6d2]">
+                        <p class="text-sm sm:text-base font-bold text-gray-700">ご不明な点がございましたらお気軽にお問合せください。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10.5 料金表直下のCTAとメッセージ -->
+        <section class="w-full py-16 bg-brand-bg relative overflow-hidden">
              <!-- 背景装飾 -->
             <div class="absolute top-[10%] left-[-15%] w-96 h-96 bg-[#f2e2c2] rounded-full opacity-40 blur-3xl"></div>
             
-            <div class="max-w-3xl mx-auto px-6 sm:px-10 relative z-10">
-                <div class="max-w-[600px] mx-auto">
-                    <h2 class="text-xl sm:text-2xl font-bold text-center mb-8 leading-relaxed">
-                        本気で改善していただくため<br>
-                        <span class="text-brand-red">お約束してほしいこと</span>があります
-                    </h2>
+            <div class="max-w-4xl mx-auto px-6 sm:px-10 relative z-10">
+                <!-- 予約バナー -->
+                <div class="max-w-[600px] mx-auto space-y-4 mb-16">
+                    <a href="https://line.me/R/ti/p/@534aunyt" target="_blank" rel="noopener noreferrer" class="block">
+                        <img src="assets/line-banner.png" alt="LINE予約" class="banner-hover w-full rounded-xl shadow-md" onerror="this.src='https://placehold.co/600x160/06C755/ffffff?text=LINE+RESERVE'">
+                    </a>
+                    <a href="https://beauty.hotpepper.jp/kr/slnH000739757/" target="_blank" rel="noopener noreferrer" class="block">
+                        <img src="assets/Hotpepper-banner.png" alt="ホットペッパー予約" class="banner-hover w-full rounded-xl shadow-md" onerror="this.src='https://placehold.co/600x160/ff6b6b/ffffff?text=HOTPEPPER+RESERVE'">
+                    </a>
+                </div>
 
-                    <div class="border-2 border-gray-300 rounded-xl p-6 mb-8 bg-white relative">
-                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gray-600 text-white text-xs sm:text-sm font-bold px-6 py-1.5 rounded-full whitespace-nowrap shadow-md">
-                            このような方は当院には向いておりません
-                        </div>
-                        <ul class="mt-4 space-y-3 text-sm sm:text-base text-gray-700 font-medium">
-                            <li class="flex items-start"><span class="text-gray-400 font-bold mr-3 mt-0.5">✕</span>とにかく長くマッサージをしてほしい方</li>
-                            <li class="flex items-start"><span class="text-gray-400 font-bold mr-3 mt-0.5">✕</span>その場だけ痛みが取れればいいと思っている方</li>
-                            <li class="flex items-start"><span class="text-gray-400 font-bold mr-3 mt-0.5">✕</span>私がお伝えしたセルフケアをしてくれない方</li>
-                            <li class="flex items-start"><span class="text-gray-400 font-bold mr-3 mt-0.5">✕</span>ご自身の健康にお金と時間を使えない方</li>
-                        </ul>
+                <!-- メッセージボックス -->
+                <div class="max-w-3xl mx-auto bg-white p-8 sm:p-12 rounded-2xl shadow-sm border border-[#f0e6d2]">
+                    <div class="text-center mb-8">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-brand-text border-b-2 border-brand-orange pb-3 inline-block">なぜ初回2,980円なのか？</h2>
                     </div>
-
-                    <div class="border-2 border-brand-orange rounded-xl p-6 bg-[#fff8f5] relative shadow-lg">
-                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-orange text-white text-xs sm:text-sm font-bold px-6 py-1.5 rounded-full whitespace-nowrap shadow-md">
-                            反対に、以下のような方には必ずお役に立てます
+                    
+                    <div class="text-sm sm:text-base leading-loose text-gray-800 text-center sm:text-left space-y-6">
+                        <p>
+                            それは、あなたに <strong class="text-brand-orange font-bold text-lg">「本当に合う施術かどうか」</strong> を<br>
+                            安心して体験していただきたいからです。
+                        </p>
+                        <p>
+                            頭痛で悩む多くの方が、<br>
+                            整骨院・鍼灸・マッサージ・整体院を<br class="sm:hidden">いくつも回りながら、<br>
+                            なかなか改善にたどり着けずにいます。
+                        </p>
+                        <p>
+                            私は、あなたにもう同じような経験をしてほしくありません。<br>
+                            そして、効果を実感できない施術に<br>
+                            大切な時間やお金を使い続けてほしくないのです。
+                        </p>
+                        <p>
+                            ここまでHPをご覧いただいたあなたは、<br>
+                            きっと「今度こそ頭痛をなんとかしたい」と<br>
+                            強く感じているのだと思います。
+                        </p>
+                        <p>
+                            私は頭痛の症状で悩まれた方を<br>
+                            <strong class="text-brand-red font-bold text-lg">本気で改善へ導くことを使命にしている頭痛専門の治療家</strong> です。<br>
+                            あなたのお悩みにしっかり向き合い、<br>
+                            最適な改善プランを全力でサポートします。
+                        </p>
+                        <p>
+                            まずは、あなたのお話を聞かせてください。<br>
+                            一緒に改善への一歩を踏み出しましょう。
+                        </p>
+                        <div class="pt-6 text-center">
+                            <p class="font-bold text-brand-text text-lg sm:text-xl border-b-2 border-brand-orange pb-1 inline-block">
+                                本気で頭痛を改善したい方は、今すぐご相談ください。
+                            </p>
                         </div>
-                        <ul class="mt-4 space-y-3 text-sm sm:text-base text-brand-text font-bold">
-                            <li class="flex items-start"><span class="text-brand-orange mr-3 mt-0.5">◯</span>根本から頭痛を改善したいと思っている方</li>
-                            <li class="flex items-start"><span class="text-brand-orange mr-3 mt-0.5">◯</span>やりたいことを諦めたくない方</li>
-                            <li class="flex items-start"><span class="text-brand-orange mr-3 mt-0.5">◯</span>私の施術プランにご納得していただける方</li>
-                            <li class="flex items-start"><span class="text-brand-orange mr-3 mt-0.5">◯</span>生活習慣を改善しようと努力していただける方</li>
-                        </ul>
                     </div>
-
-                    <p class="text-sm sm:text-base mt-8 text-center leading-loose">
-                        私はその場しのぎの施術は行いません。<br>
-                        上記のお約束を守っていただける方には、<br>
-                        <strong class="text-brand-red border-b-2 border-brand-red pb-1">私も全力でサポートさせていただきます。</strong>
-                    </p>
                 </div>
             </div>
         </section>
 
         <!-- 11. FAQ -->
         <section class="w-full py-16 bg-white">
-            <div class="max-w-3xl mx-auto px-6 sm:px-10">
+            <div class="max-w-4xl mx-auto px-6 sm:px-10">
                 <div class="text-center mb-10">
                     <span class="text-brand-orange font-bold text-sm tracking-widest block mb-2">FAQ</span>
                     <h2 class="text-2xl sm:text-3xl font-bold text-brand-text mb-4">よくあるご質問</h2>
-                    <div class="w-16 h-1 bg-brand-orange mx-auto"></div>
+                    <div class="w-16 h-1 bg-brand-orange mx-auto mb-4"></div>
+                    <p class="text-sm sm:text-base text-gray-700">よくあるご質問とその答えをご紹介します。<br class="sm:hidden">どうぞご参考になさってください。</p>
                 </div>
 
-                <div class="max-w-[600px] mx-auto space-y-10">
+                <div class="max-w-3xl mx-auto space-y-10">
                     <!-- カテゴリ1 -->
                     <div>
                         <h3 class="font-bold text-lg text-brand-text mb-4 pl-3 border-l-4 border-brand-orange">施術メニューについて</h3>
@@ -343,7 +561,43 @@
                                     <span class="text-[#b58f4a] font-black text-lg mr-3 leading-none mt-0.5">A.</span>
                                     <div>
                                         <p class="font-bold text-brand-text mb-2">ご状況やご要望を踏まえて、最適なコースをご提案いたします</p>
-                                        <p class="leading-relaxed">腰の痛み、膝の痛み、足の痛みなど、その方の症状に合わせて最適な施術メニューをご提案いたします。コースの決め方が分からないといった方も、まずはお気軽にお問合せ・ご相談ください。</p>
+                                        <p class="leading-relaxed">腰の痛み、膝の痛み、足の痛みなど、その方の症状に合わせて最適な施術メニューをご提案いたします。<br><br>コースの決め方が分からないといった方も、まずはお気軽にお問合せ・ご相談ください。</p>
+                                    </div>
+                                </div>
+                            </details>
+                            <details class="bg-gray-50 rounded-lg border border-gray-200 group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex justify-between items-center font-bold p-4 sm:p-5 text-sm sm:text-base leading-snug">
+                                    <span class="flex items-start pr-4">
+                                        <span class="text-brand-orange font-black text-lg mr-3 leading-none mt-0.5">Q.</span>
+                                        後から、追加の費用がかかることはありませんか？
+                                    </span>
+                                    <span class="transition group-open:rotate-180 text-gray-400 flex-shrink-0">
+                                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                                    </span>
+                                </summary>
+                                <div class="text-sm sm:text-base text-gray-700 px-4 sm:px-5 pb-5 pt-2 flex items-start bg-white rounded-b-lg">
+                                    <span class="text-[#b58f4a] font-black text-lg mr-3 leading-none mt-0.5">A.</span>
+                                    <div>
+                                        <p class="font-bold text-brand-text mb-2">初回は掲載している費用以外はかかりません</p>
+                                        <p class="leading-relaxed">ホームページ上にすべての費用を掲載しております。また、施術を始める前に、お支払いが必要な費用について改めてご説明いたしますので、どうぞご安心ください。</p>
+                                    </div>
+                                </div>
+                            </details>
+                            <details class="bg-gray-50 rounded-lg border border-gray-200 group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex justify-between items-center font-bold p-4 sm:p-5 text-sm sm:text-base leading-snug">
+                                    <span class="flex items-start pr-4">
+                                        <span class="text-brand-orange font-black text-lg mr-3 leading-none mt-0.5">Q.</span>
+                                        健康保険は使えますか？
+                                    </span>
+                                    <span class="transition group-open:rotate-180 text-gray-400 flex-shrink-0">
+                                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                                    </span>
+                                </summary>
+                                <div class="text-sm sm:text-base text-gray-700 px-4 sm:px-5 pb-5 pt-2 flex items-start bg-white rounded-b-lg">
+                                    <span class="text-[#b58f4a] font-black text-lg mr-3 leading-none mt-0.5">A.</span>
+                                    <div>
+                                        <p class="font-bold text-brand-text mb-2">使えません。</p>
+                                        <p class="leading-relaxed">当院では施術技術を高く保つため、すべて自費診療とさせていただいています。</p>
                                     </div>
                                 </div>
                             </details>
@@ -361,7 +615,7 @@
                                     <span class="text-[#b58f4a] font-black text-lg mr-3 leading-none mt-0.5">A.</span>
                                     <div>
                                         <p class="font-bold text-brand-text mb-2">非常に高い改善率を誇っておりますが、絶対に治るとは言えません。</p>
-                                        <p class="leading-relaxed">世の中に100%絶対に治る治療法は確立されておりません。ですので、絶対に治るとはいえませんが、<strong class="text-brand-red">当院を選んだことを絶対に後悔はさせません。</strong>そこだけは必ずお約束します。</p>
+                                        <p class="leading-relaxed">世の中に100％絶対に治る治療法は確立されておりません。<br><br>ですので、絶対に治るとはいえませんが、<strong class="text-brand-red font-bold">当院を選んだことを絶対に後悔はさせません。</strong><br><br>そこだけは必ずお約束します。</p>
                                     </div>
                                 </div>
                             </details>
@@ -376,6 +630,42 @@
                                 <summary class="flex justify-between items-center font-bold p-4 sm:p-5 text-sm sm:text-base leading-snug">
                                     <span class="flex items-start pr-4">
                                         <span class="text-brand-orange font-black text-lg mr-3 leading-none mt-0.5">Q.</span>
+                                        予約制ですか？
+                                    </span>
+                                    <span class="transition group-open:rotate-180 text-gray-400 flex-shrink-0">
+                                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                                    </span>
+                                </summary>
+                                <div class="text-sm sm:text-base text-gray-700 px-4 sm:px-5 pb-5 pt-2 flex items-start bg-white rounded-b-lg">
+                                    <span class="text-[#b58f4a] font-black text-lg mr-3 leading-none mt-0.5">A.</span>
+                                    <div>
+                                        <p class="font-bold text-brand-text mb-2">当院は完全予約制です。</p>
+                                        <p class="leading-relaxed">予約時間の5分前にお越しください。<br><br>ご予約前後の時間も他のお客様がいらっしゃいますのでご注意ください。遅刻してしまう場合は必ずご連絡ください。</p>
+                                    </div>
+                                </div>
+                            </details>
+                            <details class="bg-gray-50 rounded-lg border border-gray-200 group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex justify-between items-center font-bold p-4 sm:p-5 text-sm sm:text-base leading-snug">
+                                    <span class="flex items-start pr-4">
+                                        <span class="text-brand-orange font-black text-lg mr-3 leading-none mt-0.5">Q.</span>
+                                        どのような服装で伺えば良いですか？
+                                    </span>
+                                    <span class="transition group-open:rotate-180 text-gray-400 flex-shrink-0">
+                                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                                    </span>
+                                </summary>
+                                <div class="text-sm sm:text-base text-gray-700 px-4 sm:px-5 pb-5 pt-2 flex items-start bg-white rounded-b-lg">
+                                    <span class="text-[#b58f4a] font-black text-lg mr-3 leading-none mt-0.5">A.</span>
+                                    <div>
+                                        <p class="font-bold text-brand-text mb-2">動きやすい格好でお越しください</p>
+                                        <p class="leading-relaxed">ミニスカートは避けていただき、Tシャツにパンツなど動きやすい服装でお越しください。<br><br>更衣室でのお着替え・身支度が可能ですので、前後にご予定がある方は、お着替えをお持ちいただいても構いません。</p>
+                                    </div>
+                                </div>
+                            </details>
+                            <details class="bg-gray-50 rounded-lg border border-gray-200 group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex justify-between items-center font-bold p-4 sm:p-5 text-sm sm:text-base leading-snug">
+                                    <span class="flex items-start pr-4">
+                                        <span class="text-brand-orange font-black text-lg mr-3 leading-none mt-0.5">Q.</span>
                                         何回で症状がよくなりますか？
                                     </span>
                                     <span class="transition group-open:rotate-180 text-gray-400 flex-shrink-0">
@@ -385,10 +675,28 @@
                                 <div class="text-sm sm:text-base text-gray-700 px-4 sm:px-5 pb-5 pt-2 flex items-start bg-white rounded-b-lg">
                                     <span class="text-[#b58f4a] font-black text-lg mr-3 leading-none mt-0.5">A.</span>
                                     <div>
-                                        <p class="font-bold text-brand-text mb-2">1回で効果を実感される方もいらっしゃいます。</p>
-                                        <p class="leading-relaxed mb-4">症状によりますが、始めは週1回ペースで通院されることをおすすめしております。続けて通院していただくことで改善度はあがっていきます。</p>
-                                        <img src="https://www.headache-rapport.jp/_p/acre/16763/images/pc/f1e2c17b.jpeg" alt="改善のイメージ" class="w-full max-w-[300px] rounded border border-gray-200 mb-2">
-                                        <p class="text-[10px] text-gray-500">※施術効果には個人差があり、必ず効果効能を保証するものではありません。</p>
+                                        <p class="font-bold text-brand-text mb-2">来院されるお客様の傾向として、1回で効果を実感される方もいらっしゃいます。</p>
+                                        <p class="leading-relaxed mb-4">症状によりますが、始めは週1回ペースで通院されることをおすすめしております。<br><br>続けて通院していただくことで改善度はあがっていきますので、下の写真を参考にしてください。</p>
+                                        <p class="text-xs text-gray-500 mb-2">*施術効果には個人差があり、必ず効果効能を保証するものではありません。</p>
+                                        <img src="https://www.headache-rapport.jp/_p/acre/16763/images/pc/f1e2c17b.jpeg" alt="改善のイメージ" class="w-full max-w-[300px] rounded border border-gray-200">
+                                    </div>
+                                </div>
+                            </details>
+                            <details class="bg-gray-50 rounded-lg border border-gray-200 group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex justify-between items-center font-bold p-4 sm:p-5 text-sm sm:text-base leading-snug">
+                                    <span class="flex items-start pr-4">
+                                        <span class="text-brand-orange font-black text-lg mr-3 leading-none mt-0.5">Q.</span>
+                                        症状に関しての相談は無料ですか？
+                                    </span>
+                                    <span class="transition group-open:rotate-180 text-gray-400 flex-shrink-0">
+                                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                                    </span>
+                                </summary>
+                                <div class="text-sm sm:text-base text-gray-700 px-4 sm:px-5 pb-5 pt-2 flex items-start bg-white rounded-b-lg">
+                                    <span class="text-[#b58f4a] font-black text-lg mr-3 leading-none mt-0.5">A.</span>
+                                    <div>
+                                        <p class="font-bold text-brand-text mb-2">もちろん無料でお受けいたします。</p>
+                                        <p class="leading-relaxed">メール・電話・LINE＠でのご相談は無料でお受けいたします。遠慮なくご相談ください。</p>
                                     </div>
                                 </div>
                             </details>
@@ -403,14 +711,14 @@
              <!-- 背景装飾 -->
             <div class="absolute top-[30%] right-[-15%] w-80 h-80 bg-[#f2e2c2] rounded-full opacity-40 blur-3xl"></div>
             
-            <div class="max-w-3xl mx-auto px-6 sm:px-10 relative z-10">
+            <div class="max-w-4xl mx-auto px-6 sm:px-10 relative z-10">
                 <div class="text-center mb-10">
                     <span class="text-brand-orange font-bold text-sm tracking-widest block mb-2">ACCESS</span>
                     <h2 class="text-2xl sm:text-3xl font-bold text-brand-text mb-4">アクセス・院情報</h2>
                     <div class="w-16 h-1 bg-brand-orange mx-auto"></div>
                 </div>
 
-                <div class="max-w-[600px] mx-auto">
+                <div class="max-w-3xl mx-auto">
                     <div class="bg-white rounded-xl p-6 sm:p-8 mb-8 shadow-sm border border-[#f0e6d2]">
                         <h3 class="font-black text-xl text-brand-text mb-4 border-b border-gray-200 pb-3">頭痛専門らぽーる整体院</h3>
                         <ul class="text-sm sm:text-base space-y-4 text-gray-800">
@@ -445,23 +753,47 @@
                             allowfullscreen>
                         </iframe>
                     </div>
+
+                    <div class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-[#f0e6d2]">
+                        <h3 class="font-black text-xl text-brand-text mb-4 border-b border-gray-200 pb-3">車でお越しの場合</h3>
+                        <p class="text-sm sm:text-base text-gray-800 mb-6">環状線からの当院への道をご説明します。</p>
+
+                        <div class="space-y-8">
+                            <div>
+                                <img src="https://www.headache-rapport.jp/_p/acre/16763/images/pc/b069e011.png" alt="道順1" class="w-full max-w-[500px] mx-auto rounded-lg border border-gray-200 mb-3 shadow-sm">
+                                <p class="text-sm sm:text-base text-gray-800 leading-relaxed">フライブルグ通りと新空港通りの交差点を右折します。</p>
+                            </div>
+                            <div>
+                                <img src="https://www.headache-rapport.jp/_p/acre/16763/images/pc/fb94e3ef.png" alt="道順2" class="w-full max-w-[500px] mx-auto rounded-lg border border-gray-200 mb-3 shadow-sm">
+                                <p class="text-sm sm:text-base text-gray-800 leading-relaxed">サクラメント通りを直進します。左手にすき家さん、右手にラブランシュさんがあります。</p>
+                            </div>
+                            <div>
+                                <img src="https://www.headache-rapport.jp/_p/acre/16763/images/pc/115e6d86.png" alt="道順3" class="w-full max-w-[500px] mx-auto rounded-lg border border-gray-200 mb-3 shadow-sm">
+                                <p class="text-sm sm:text-base text-gray-800 leading-relaxed">高架の坂のすぐ手前左手に当院があります。</p>
+                            </div>
+                            <div>
+                                <img src="https://www.headache-rapport.jp/_p/acre/16763/images/pc/66a8830a.png" alt="道順4" class="w-full max-w-[500px] mx-auto rounded-lg border border-gray-200 mb-3 shadow-sm">
+                                <p class="text-sm sm:text-base text-gray-800 leading-relaxed">駐車場が入り口手前に２台ありますのでどちらに停めていただいても大丈夫です。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instagram 埋め込み -->
+                    <div class="bg-white rounded-xl p-6 sm:p-8 mt-8 shadow-sm border border-[#f0e6d2] flex justify-center">
+                        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DEY0dwzzKtv/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DEY0dwzzKtv/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">この投稿をInstagramで見る</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DEY0dwzzKtv/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">川又淳矢【愛媛県松山市の頭痛専門らぽーる整体院】(@junya_kawamata)がシェアした投稿</a></p></div></blockquote>
+                        <script async src="//www.instagram.com/embed.js"></script>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- 13. 最終CTA -->
         <section id="contact" class="w-full py-16 bg-gray-900 text-white text-center pb-20">
-            <div class="max-w-3xl mx-auto px-6 sm:px-10">
-                <div class="max-w-[600px] mx-auto">
-                    <h2 class="text-xl sm:text-2xl font-bold mb-6">なぜ初回2,980円なのか？</h2>
-                    <p class="text-sm sm:text-base leading-relaxed mb-10 text-gray-300">
-                        それは、あなたに<strong class="text-white border-b border-brand-gold pb-1">「本当に合う施術かどうか」</strong>を、安心して体験していただきたいからです。<br><br>
-                        いくつもの院を回り、改善にたどり着けない経験をもうしてほしくありません。まずはあなたのお話を聞かせてください。一緒に改善への一歩を踏み出しましょう。
-                    </p>
-
+            <div class="max-w-4xl mx-auto px-6 sm:px-10">
+                <div class="max-w-3xl mx-auto">
                     <div class="bg-white/10 p-6 sm:p-10 rounded-2xl border border-white/20 backdrop-blur-sm shadow-2xl">
                         <p class="font-bold text-brand-gold mb-6 text-lg sm:text-xl leading-snug">本気で頭痛を改善したい方は、<br>今すぐご予約ください。</p>
-                        <div class="space-y-4">
+                        <div class="space-y-4 max-w-[600px] mx-auto">
                             <a href="https://line.me/R/ti/p/@534aunyt" target="_blank" rel="noopener noreferrer" class="block">
                                 <img src="assets/line-banner.png" alt="LINE予約" class="banner-hover w-full rounded-xl shadow-lg" onerror="this.src='https://placehold.co/600x160/06C755/ffffff?text=LINE+RESERVE'">
                             </a>
@@ -476,7 +808,7 @@
 
         <!-- フッター -->
         <footer class="w-full bg-black text-gray-400 text-center py-8 text-xs sm:text-sm">
-            <div class="max-w-3xl mx-auto px-6">
+            <div class="max-w-4xl mx-auto px-6">
                 <p class="mb-2">松山で【唯一】の頭痛めまい専門整体院</p>
                 <p class="font-bold text-white text-base mb-4 tracking-widest">頭痛専門らぽーる整体院</p>
                 <p>&copy; 頭痛専門らぽーる整体院 All Rights Reserved.</p>
