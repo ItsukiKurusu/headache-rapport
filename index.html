@@ -149,7 +149,7 @@
         </div>
 
         <!-- 5. 掲載実績 -->
-        <section class="w-full bg-white pb-12">
+        <section class="w-full bg-white pt-6 pb-12">
             <div class="max-w-4xl mx-auto px-6 sm:px-10 mb-8">
                 <div class="bg-brand-orange text-white text-center py-4 shadow-inner rounded-lg">
                     <h2 class="font-bold text-base sm:text-lg tracking-wide">当院の技術が認められ、凄腕施術家として掲載されました！</h2>
@@ -191,8 +191,10 @@
                         <h3 class="font-bold text-[#b58f4a] text-xl md:text-2xl mb-6 leading-snug border-b border-[#e8d7a5] pb-4">南海放送　清家夕貴アナから喜びの声をいただきました！</h3>
                         
                         <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
-                            <!-- 大きく表示する写真プレースホルダ -->
-                            <img src="https://placehold.co/600x600/eeeeee/aaaaaa?text=Photo" alt="お客様写真プレースホルダ" class="w-full md:w-1/3 aspect-square object-cover rounded-xl border-4 border-white shadow-md mx-auto md:mx-0 flex-shrink-0">
+                            <div class="w-full md:w-1/3 grid grid-cols-2 md:grid-cols-1 gap-3 flex-shrink-0">
+                                <img src="assets/yorokobi-seike.webp" alt="お客様写真1" class="w-full aspect-square object-cover rounded-xl border-4 border-white shadow-md">
+                                <img src="assets/yorokobi-seike2.webp" alt="お客様写真2" class="w-full aspect-square object-cover rounded-xl border-4 border-white shadow-md">
+                            </div>
                             
                             <!-- Q&A全文 -->
                             <div class="w-full md:w-2/3 space-y-5 text-sm sm:text-base text-gray-800">
@@ -234,8 +236,10 @@
                         <h3 class="font-bold text-[#b58f4a] text-xl md:text-2xl mb-6 leading-snug border-b border-[#e8d7a5] pb-4">仕事が手につかないほどの頭痛がなくなりました！</h3>
                         
                         <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
-                            <!-- 大きく表示する写真プレースホルダ -->
-                            <img src="https://placehold.co/600x600/eeeeee/aaaaaa?text=Photo" alt="お客様写真プレースホルダ" class="w-full md:w-1/3 aspect-square object-cover rounded-xl border-4 border-white shadow-md mx-auto md:mx-0 flex-shrink-0">
+                            <div class="w-full md:w-1/3 grid grid-cols-2 md:grid-cols-1 gap-3 flex-shrink-0">
+                                <img src="assets/yorokobi-2.webp" alt="お客様写真1" class="w-full aspect-square object-cover rounded-xl border-4 border-white shadow-md">
+                                <img src="assets/yorokobi-2-1.webp" alt="お客様写真2" class="w-full aspect-square object-cover rounded-xl border-4 border-white shadow-md">
+                            </div>
                             
                             <!-- Q&A全文 -->
                             <div class="w-full md:w-2/3 space-y-5 text-sm sm:text-base text-gray-800">
@@ -328,88 +332,103 @@
                     <div class="bg-white p-6 sm:p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 relative">
                         <div class="absolute -top-5 -left-3 sm:-left-5 bg-gradient-to-br from-brand-gold to-[#a68a4a] text-white font-black text-2xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg">1</div>
                         <h3 class="font-bold text-lg sm:text-xl mb-3 pl-6 border-b border-gray-100 pb-3">慢性頭痛の原因を特定し、根本から改善する施術だから</h3>
-                        <p class="text-sm sm:text-base leading-loose text-gray-700">
-                            慢性頭痛には必ず原因があります。<br>
-                            しかし、原因を特定しないまま薬だけに頼っていても改善は進みません。<br><br>
-                            当院では、まず丁寧なカウンセリングと検査を行い、<br>
-                            <strong class="font-bold text-brand-text">日常生活や姿勢のクセの中に隠れた“本当の原因”を見つけ出します。</strong><br><br>
-                            多くの慢性頭痛は、<br>
-                            <strong class="font-bold text-brand-text">首のゆがみ（骨のズレ）と血流低下</strong>が関係しています。<br>
-                            これはレントゲンやMRIだけでは分からないことも多く、<br>
-                            実際の生活動作や体の使い方を見て初めて把握できる部分です。<br><br>
-                            だからこそ、初回のカウンセリングを重視しています。<br>
-                            あなたの頭痛の原因をわかりやすく説明し、<br>
-                            改善までの道筋を一緒に作っていきます。
-                        </p>
+                        <div class="flex flex-col lg:flex-row gap-6 items-start">
+                            <p class="text-sm sm:text-base leading-loose text-gray-700 lg:w-2/3">
+                                慢性頭痛には必ず原因があります。<br>
+                                しかし、原因を特定しないまま薬だけに頼っていても改善は進みません。<br><br>
+                                当院では、まず丁寧なカウンセリングと検査を行い、<br>
+                                <strong class="font-bold text-brand-text">日常生活や姿勢のクセの中に隠れた“本当の原因”を見つけ出します。</strong><br><br>
+                                多くの慢性頭痛は、<br>
+                                <strong class="font-bold text-brand-text">首のゆがみ（骨のズレ）と血流低下</strong>が関係しています。<br>
+                                これはレントゲンやMRIだけでは分からないことも多く、<br>
+                                実際の生活動作や体の使い方を見て初めて把握できる部分です。<br><br>
+                                だからこそ、初回のカウンセリングを重視しています。<br>
+                                あなたの頭痛の原因をわかりやすく説明し、<br>
+                                改善までの道筋を一緒に作っていきます。
+                            </p>
+                            <img src="assets/erabareruriyuu1.webp" alt="選ばれる理由1" class="w-full lg:w-1/3 rounded-xl border border-gray-200 shadow-sm object-cover">
+                        </div>
                     </div>
 
                     <div class="bg-white p-6 sm:p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 relative">
                         <div class="absolute -top-5 -left-3 sm:-left-5 bg-gradient-to-br from-brand-gold to-[#a68a4a] text-white font-black text-2xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg">2</div>
                         <h3 class="font-bold text-lg sm:text-xl mb-3 pl-6 border-b border-gray-100 pb-3">日常生活指導が徹底しているから</h3>
-                        <p class="text-sm sm:text-base leading-loose text-gray-700">
-                            毎日多くの頭痛患者さんを施術する中で気づいたことがあります。<br>
-                            それは、<strong class="font-bold text-brand-text">普段の姿勢・動作・生活習慣のクセが頭痛を引き起こしていることが非常に多い</strong>ということです。<br><br>
-                            当院では、初回カウンセリングで伺った情報をもとに、<br>
-                            あなたの日常生活の中にある <strong class="font-bold text-brand-text">“頭痛の原因になりやすいクセ”</strong> を分かりやすくお伝えします。<br><br>
-                            施術だけで根本改善をめざすことは難しいため、<br>
-                            アフターフォローにも力を入れています。<br>
-                            <span class="pl-2 block">・痛みが出たときの対処法</span>
-                            <span class="pl-2 block">・自宅でできるケア方法</span>
-                            <span class="pl-2 block mb-2">・姿勢や動きの改善ポイント</span>
-                            これらを随時お伝えし、<br>
-                            <strong class="font-bold text-brand-text border-b-2 border-brand-orange pb-0.5">「あなた × 当院」の二人三脚で頭痛を根本から改善</strong>していきます。
-                        </p>
+                        <div class="flex flex-col lg:flex-row gap-6 items-start">
+                            <p class="text-sm sm:text-base leading-loose text-gray-700 lg:w-2/3">
+                                毎日多くの頭痛患者さんを施術する中で気づいたことがあります。<br>
+                                それは、<strong class="font-bold text-brand-text">普段の姿勢・動作・生活習慣のクセが頭痛を引き起こしていることが非常に多い</strong>ということです。<br><br>
+                                当院では、初回カウンセリングで伺った情報をもとに、<br>
+                                あなたの日常生活の中にある <strong class="font-bold text-brand-text">“頭痛の原因になりやすいクセ”</strong> を分かりやすくお伝えします。<br><br>
+                                施術だけで根本改善をめざすことは難しいため、<br>
+                                アフターフォローにも力を入れています。<br>
+                                <span class="pl-2 block">・痛みが出たときの対処法</span>
+                                <span class="pl-2 block">・自宅でできるケア方法</span>
+                                <span class="pl-2 block mb-2">・姿勢や動きの改善ポイント</span>
+                                これらを随時お伝えし、<br>
+                                <strong class="font-bold text-brand-text border-b-2 border-brand-orange pb-0.5">「あなた × 当院」の二人三脚で頭痛を根本から改善</strong>していきます。
+                            </p>
+                            <img src="assets/erabareruriyuu2.webp" alt="選ばれる理由2" class="w-full lg:w-1/3 rounded-xl border border-gray-200 shadow-sm object-cover">
+                        </div>
                     </div>
 
                     <div class="bg-white p-6 sm:p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 relative">
                         <div class="absolute -top-5 -left-3 sm:-left-5 bg-gradient-to-br from-brand-gold to-[#a68a4a] text-white font-black text-2xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg">3</div>
                         <h3 class="font-bold text-lg sm:text-xl mb-3 pl-6 border-b border-gray-100 pb-3">頭痛改善率92％。首と内臓まで整える独自の頭痛整体だから</h3>
-                        <p class="text-sm sm:text-base leading-loose text-gray-700">
-                            頭痛の多くは、<br>
-                            <strong class="font-bold text-brand-text">首への過剰な負担と血行不良</strong>が原因です。<br><br>
-                            人の頭は5〜6kgあり、<br>
-                            15度うつむくだけで負担は約3倍、<br>
-                            スマホ姿勢の60度では約5倍にまで増えます。<br>
-                            これに加えてストレスが続くと、<br>
-                            首まわりの筋肉が強く緊張し、血流がさらに低下。<br>
-                            これが慢性頭痛の大きな引き金になります。<br><br>
-                            当院では、首だけでなく<br>
-                            <strong class="font-bold text-brand-text">内臓（特に腹部）の働きにも着目</strong>して施術を行います。<br>
-                            内臓機能の低下が頭痛やめまいにつながるケースも多いためです。<br><br>
-                            首・姿勢・内臓の3つを整えることで、<br>
-                            再発しにくい身体へ導き、<br>
-                            <strong class="font-bold text-brand-red text-lg">92％の頭痛改善率</strong>を実現しています。
-                        </p>
+                        <div class="flex flex-col lg:flex-row gap-6 items-start">
+                            <p class="text-sm sm:text-base leading-loose text-gray-700 lg:w-2/3">
+                                頭痛の多くは、<br>
+                                <strong class="font-bold text-brand-text">首への過剰な負担と血行不良</strong>が原因です。<br><br>
+                                人の頭は5〜6kgあり、<br>
+                                15度うつむくだけで負担は約3倍、<br>
+                                スマホ姿勢の60度では約5倍にまで増えます。<br>
+                                これに加えてストレスが続くと、<br>
+                                首まわりの筋肉が強く緊張し、血流がさらに低下。<br>
+                                これが慢性頭痛の大きな引き金になります。<br><br>
+                                当院では、首だけでなく<br>
+                                <strong class="font-bold text-brand-text">内臓（特に腹部）の働きにも着目</strong>して施術を行います。<br>
+                                内臓機能の低下が頭痛やめまいにつながるケースも多いためです。<br><br>
+                                首・姿勢・内臓の3つを整えることで、<br>
+                                再発しにくい身体へ導き、<br>
+                                <strong class="font-bold text-brand-red text-lg">92％の頭痛改善率</strong>を実現しています。
+                            </p>
+                            <img src="assets/erabareruriyuu3.webp" alt="選ばれる理由3" class="w-full lg:w-1/3 rounded-xl border border-gray-200 shadow-sm object-cover">
+                        </div>
                     </div>
 
                     <div class="bg-white p-6 sm:p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 relative">
                         <div class="absolute -top-5 -left-3 sm:-left-5 bg-gradient-to-br from-brand-gold to-[#a68a4a] text-white font-black text-2xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg">4</div>
                         <h3 class="font-bold text-lg sm:text-xl mb-3 pl-6 border-b border-gray-100 pb-3">完全予約制、あなただけの時間を大切にします</h3>
-                        <p class="text-sm sm:text-base leading-loose text-gray-700">
-                            当院は <strong class="font-bold text-brand-text">1日8名限定の完全予約制</strong>。<br>
-                            ご予約いただいたその時間は、あなただけのための時間です。<br><br>
-                            施術はすべてマンツーマンで行うため、<br>
-                            周りを気にせず、悩みや不安を安心してお話しいただけます。<br><br>
-                            「ベッドが並んでいて話しづらい…」<br>
-                            そんな思いをさせないよう、<br>
-                            <strong class="font-bold text-brand-text">静かで落ちついたプライベート空間</strong>をご用意しています。
-                        </p>
+                        <div class="flex flex-col lg:flex-row gap-6 items-start">
+                            <p class="text-sm sm:text-base leading-loose text-gray-700 lg:w-2/3">
+                                当院は <strong class="font-bold text-brand-text">1日8名限定の完全予約制</strong>。<br>
+                                ご予約いただいたその時間は、あなただけのための時間です。<br><br>
+                                施術はすべてマンツーマンで行うため、<br>
+                                周りを気にせず、悩みや不安を安心してお話しいただけます。<br><br>
+                                「ベッドが並んでいて話しづらい…」<br>
+                                そんな思いをさせないよう、<br>
+                                <strong class="font-bold text-brand-text">静かで落ちついたプライベート空間</strong>をご用意しています。
+                            </p>
+                            <img src="assets/erabareruriyuu4.webp" alt="選ばれる理由4" class="w-full lg:w-1/3 rounded-xl border border-gray-200 shadow-sm object-cover">
+                        </div>
                     </div>
 
                     <div class="bg-white p-6 sm:p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 relative">
                         <div class="absolute -top-5 -left-3 sm:-left-5 bg-gradient-to-br from-brand-gold to-[#a68a4a] text-white font-black text-2xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg">5</div>
                         <h3 class="font-bold text-lg sm:text-xl mb-3 pl-6 border-b border-gray-100 pb-3">改善という結果を提供します。</h3>
-                        <p class="text-sm sm:text-base leading-loose text-gray-700">
-                            頭痛を最速で改善するには、<br>
-                            <strong class="font-bold text-brand-text">正しい道順（改善プロセス）を知ること</strong>が大切です。<br><br>
-                            ネットの情報や市販薬だけで乗り越えようとすると、<br>
-                            時間も労力もかかり、良くならないまま何年も悩み続けてしまうことがあります。<br><br>
-                            私はこれまで多くの頭痛患者さんを改善へ導いてきました。<br>
-                            その経験から、あなたが迷い込んでいる “頭痛という迷路” の出口まで、<br>
-                            <strong class="font-bold text-brand-text border-b-2 border-brand-orange pb-0.5">最短ルートでナビゲートすることが私の役目</strong>だと考えています。<br><br>
-                            ひとりで抱え込まず、<br>
-                            一緒にゴール（改善）を目指しましょう。
-                        </p>
+                        <div class="flex flex-col lg:flex-row gap-6 items-start">
+                            <p class="text-sm sm:text-base leading-loose text-gray-700 lg:w-2/3">
+                                頭痛を最速で改善するには、<br>
+                                <strong class="font-bold text-brand-text">正しい道順（改善プロセス）を知ること</strong>が大切です。<br><br>
+                                ネットの情報や市販薬だけで乗り越えようとすると、<br>
+                                時間も労力もかかり、良くならないまま何年も悩み続けてしまうことがあります。<br><br>
+                                私はこれまで多くの頭痛患者さんを改善へ導いてきました。<br>
+                                その経験から、あなたが迷い込んでいる “頭痛という迷路” の出口まで、<br>
+                                <strong class="font-bold text-brand-text border-b-2 border-brand-orange pb-0.5">最短ルートでナビゲートすることが私の役目</strong>だと考えています。<br><br>
+                                ひとりで抱え込まず、<br>
+                                一緒にゴール（改善）を目指しましょう。
+                            </p>
+                            <img src="assets/erabareruriyuu5.webp" alt="選ばれる理由5" class="w-full lg:w-1/3 rounded-xl border border-gray-200 shadow-sm object-cover">
+                        </div>
                     </div>
                 </div>
             </div>
