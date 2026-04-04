@@ -49,9 +49,13 @@
         }
         /* スマホ時の改行崩れを抑え、PCに近い見た目に寄せる */
         @media (max-width: 640px) {
-            h1, h2, h3 {
+            h1 {
                 word-break: keep-all;
                 overflow-wrap: normal;
+            }
+            h2, h3 {
+                word-break: normal;
+                overflow-wrap: anywhere;
             }
             .text-6xl {
                 font-size: 2.7rem;
