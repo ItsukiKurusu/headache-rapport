@@ -1040,36 +1040,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </footer>
 
         <!-- スマホ固定フッターCTA -->
-        <section class="fixed bottom-0 left-0 right-0 z-50 w-full flex md:hidden bg-white shadow-xl border-t border-gray-300 cta-bell-shake" style="padding-bottom: max(env(safe-area-inset-bottom), 0px);">
-            <a href="https://line.me/R/ti/p/@534aunyt" target="_blank" rel="noopener noreferrer" class="w-1/2 block">
+        <section class="fixed bottom-0 left-0 right-0 z-50 w-full flex md:hidden bg-white shadow-xl border-t border-gray-300" style="padding-bottom: max(env(safe-area-inset-bottom), 0px);">
+            <a href="https://line.me/R/ti/p/@534aunyt" target="_blank" rel="noopener noreferrer" class="w-1/2 block cta-line-gentle-shake">
                 <img src="assets/sp-bottom-line.png" alt="LINE予約" class="banner-hover w-full h-auto object-cover" onerror="this.src='https://placehold.co/300x80/06C755/ffffff?text=LINE'">
             </a>
-            <a href="https://beauty.hotpepper.jp/kr/slnH000739757/" target="_blank" rel="noopener noreferrer" class="w-1/2 block">
+            <a href="https://beauty.hotpepper.jp/kr/slnH000739757/" target="_blank" rel="noopener noreferrer" class="w-1/2 block cta-hpb-gentle-shake">
                 <img src="assets/sp-bottom-hpb.png" alt="ホットペッパー予約" class="banner-hover w-full h-auto object-cover" onerror="this.src='https://placehold.co/300x80/ff6b6b/ffffff?text=HOTPEPPER'">
             </a>
         </section>
 
         <style>
-            @keyframes bellShake {
-                0%, 100% {
-                    transform: translateX(0) rotate(0deg);
+            @keyframes gentleShakeLine {
+                0% {
+                    transform: rotate(0deg);
                 }
-                20% {
-                    transform: translateX(-6px) rotate(-8deg);
+                5% {
+                    transform: rotate(-3deg);
                 }
-                40% {
-                    transform: translateX(6px) rotate(8deg);
+                10% {
+                    transform: rotate(3deg);
                 }
-                60% {
-                    transform: translateX(-4px) rotate(-6deg);
+                15% {
+                    transform: rotate(0deg);
                 }
-                80% {
-                    transform: translateX(4px) rotate(6deg);
+                100% {
+                    transform: rotate(0deg);
                 }
             }
 
-            .cta-bell-shake {
-                animation: bellShake 0.5s ease-in-out 3s infinite;
+            @keyframes gentleShakeHpb {
+                0% {
+                    transform: rotate(0deg);
+                }
+                5% {
+                    transform: rotate(3deg);
+                }
+                10% {
+                    transform: rotate(-3deg);
+                }
+                15% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(0deg);
+                }
+            }
+
+            .cta-line-gentle-shake {
+                animation: gentleShakeLine 4s ease-in-out infinite;
+                display: block;
+            }
+
+            .cta-hpb-gentle-shake {
+                animation: gentleShakeHpb 4s ease-in-out 2s infinite;
+                display: block;
             }
 
             @media (max-width: 768px) {
