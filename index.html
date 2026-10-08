@@ -17,6 +17,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             gtag('config', 'G-K16VRCX6Q8');
         </script>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2527091964443862');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2527091964443862&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>松山市の頭痛・めまい専門整体院｜らぽーる整体院</title>
@@ -1098,5 +1115,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
         </style>
 
+    <!-- 予約導線クリックの計測（Meta: Lead / GA4: generate_lead） -->
+    <script>
+        document.addEventListener('click', function (e) {
+            var a = e.target.closest && e.target.closest('a[href]');
+            if (!a) return;
+            var href = a.href;
+            var channel = href.indexOf('line.me') !== -1 ? 'LINE'
+                : href.indexOf('beauty.hotpepper.jp') !== -1 ? 'HotPepper'
+                : href.indexOf('tel:') === 0 ? 'Tel'
+                : href.indexOf('headache-type.vercel.app') !== -1 ? 'Diagnosis'
+                : null;
+            if (!channel) return;
+            if (channel === 'Diagnosis') {
+                if (window.fbq) fbq('trackCustom', 'DiagnosisClick');
+                return;
+            }
+            if (window.fbq) fbq('track', 'Lead', { content_name: channel });
+            if (window.gtag) gtag('event', 'generate_lead', { method: channel });
+        }, true);
+    </script>
 </body>
 </html>
